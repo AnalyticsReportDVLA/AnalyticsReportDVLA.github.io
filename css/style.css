@@ -115,6 +115,15 @@ tr {
 	
 }
 
+td .color {
+	background-color:#E2ECFF;
+	height:20px;
+}
+
+tr.odd td .color {
+	background-color:#D5E0F4;	
+}
+
 td.color {
 	background-color:#E2ECFF;
 	height:20px;
