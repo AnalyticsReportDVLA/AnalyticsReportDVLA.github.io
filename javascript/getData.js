@@ -1,4 +1,4 @@
-﻿console.log("%cGA Management Tool Console", "background-color:#ABABAB; color: #333; font-family:verdana; font-size:1.5em; padding:2px 5px; border-width:1px; border-style:solid; border-color:#ABABAB;");
+﻿//console.log("%cGA Management Tool Console", "background-color:#ABABAB; color: #333; font-family:verdana; font-size:1.5em; padding:2px 5px; border-width:1px; border-style:solid; border-color:#ABABAB;");
 var getData = {};
 getData.account = "";
 getData.webProperties = "";
