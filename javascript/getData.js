@@ -422,6 +422,7 @@ htmlBuild.viewsList = function() {
     }
 
     var total = document.createElement('tr');
+    if(processedData.account.properties.length%2!=1){total.className= "odd"};
     var td0 = document.createElement('td');
     td0.className = "total viewName color";
     td0.innerHTML = "Total";
