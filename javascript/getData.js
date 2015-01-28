@@ -366,6 +366,7 @@ htmlBuild.accountList = function() {
 }
 
 htmlBuild.viewsList = function() {
+    var viewsTot = 0;
     var tableHold = document.createElement('div');
     tableHold.id = "viewHold";
     var intro = document.createElement('div');
@@ -407,6 +408,7 @@ htmlBuild.viewsList = function() {
         var userListDiv = document.createElement('div');
         userListDiv.className = "listPropUsers";
 
+        viewsTot += processedData.getPropertyViews(property.id).length;
         countDiv.innerHTML = processedData.getPropertyViews(property.id).length;
         userListDiv.appendChild(processedData.getPropertyViewsList(property.id));
 
@@ -418,6 +420,18 @@ htmlBuild.viewsList = function() {
         tableHold.appendChild(table);
 
     }
+
+    var total = document.createElement('tr');
+    var td0 = document.createElement('td');
+    td0.className = "total";
+    td0.innerHTML = "Total";
+    var td1 = document.createElement('td');
+    td1.className = "total";
+    td1.innerHTML = viewsTot;
+    total.appendChild(td0);
+    total.appendChild(td1);
+    table.appendChild(total);
+
     return tableHold;
 }
 
