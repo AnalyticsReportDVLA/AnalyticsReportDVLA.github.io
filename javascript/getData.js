@@ -423,10 +423,10 @@ htmlBuild.viewsList = function() {
 
     var total = document.createElement('tr');
     var td0 = document.createElement('td');
-    td0.className = "total";
+    td0.className = "total viewName color";
     td0.innerHTML = "Total";
     var td1 = document.createElement('td');
-    td1.className = "total";
+    td1.className = "total color";
     var td1Div = document.createElement('div');
     td1Div.innerHTML = viewsTot;
     if(viewsTot <30) {td1Div.className = "green";}
