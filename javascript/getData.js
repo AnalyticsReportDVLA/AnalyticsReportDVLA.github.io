@@ -431,7 +431,7 @@ htmlBuild.viewsList = function() {
     var td1Div = document.createElement('div');
     td1Div.innerHTML = viewsTot;
     if(viewsTot <30) {td1Div.className = "green";}
-    if(viewsTot <40) {td1Div.className = "amber";}
+    if(viewsTot >=30 && viewsTot <40) {td1Div.className = "amber";}
     if(viewsTot >=40) {td1Div.className = "red";}
     td1.appendChild(td1Div);
     total.appendChild(td0);
