@@ -429,18 +429,9 @@ htmlBuild.viewsList = function() {
     td1.className = "total";
     var td1Div = document.createElement('div');
     td1Div.innerHTML = viewsTot;
-    switch(viewsTot) {
-        case <30:
-            td1Div.className = "green"
-            break;
-        case <40:
-            td1Div.className = "amber"
-            break;
-        case >=40:
-            td1Div.className = "red"
-            break;
-        default:
-    }
+    if(viewsTot <30) {td1Div.className = "green";}
+    if(viewsTot <40) {td1Div.className = "amber";}
+    if(viewsTot >=40) {td1Div.className = "red";}
     td1.appendChild(td1Div);
     total.appendChild(td0);
     total.appendChild(td1);
